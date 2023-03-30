@@ -9,4 +9,7 @@
     <h5>{{ book.price }}</h5>
     <br>
     <a href="{% url 'book_list' %}"><-</a>
+    <a class="btn btn-warning" href="{% url 'update_view' book.id %}">ویرایش</a>
+    <a class=" btn btn-danger" href="{% url 'delete_view' book.id %}">حذف</a>
+
 {% endblock %}
