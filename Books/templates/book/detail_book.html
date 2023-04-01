@@ -3,9 +3,9 @@
     توضیح کتاب {{book.title }}
 {% endblock %}
 {% block content %}
-    <h1>{{ book.title }}</h1>
-    <h6>{{ book.author }}</h6>
-    <p>{{ book.description }}</p>
+    <h1>{{ book.title|capfirst }}</h1>
+    <h6>{{ book.author|capfirst }}</h6>
+    <p>{{ book.description|linebreaksbr }}</p>
     <h5>{{ book.price }}</h5>
     <br>
     <a href="{% url 'book_list' %}"><-</a>
